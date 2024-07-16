@@ -21,6 +21,7 @@ background-color: rgba(0, 0, 0, 0.724);
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 28px;
+    justify-items: center;
 }
 
 #cal-display{
@@ -59,4 +60,23 @@ button:hover{
 
 button:active{
     background-color: black;
+}
+
+@media(max-width:447px){
+    button{
+        width: 60px;
+        height: 60px;
+    }
+    
+    #buttons{
+        padding: 10px 0;
+    }
+
+    .calculator{
+        width: 300px;
+    }
+
+    #cal-display{
+        width: 270px;
+    }
 }
